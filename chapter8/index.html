@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            display: inline-block;
+            transform: translate(350px,255px);
+            transform-origin: 0;
+            /* transform: scale(3,2); */
+            /* transform: scaleX(3); */
+            /* transform: scaleY(2); */
+            /* transform: skew(10deg,11deg); */
+            /* transform: rotate(0.5turn); */
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+        }
+        
+        .container{
+            background-color: red;
+            height: 80vh;
+        }
+        img{
+            width: 455px;
+            transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        img:hover{
+            width: 56px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://source.unsplash.com/260x120/?natur,water">
+        </div>
+    </div>
+</body>
+</html>
